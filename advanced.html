@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+      <div id="headdera">
+        <a href=index.html><img id="googlelogo" src="images/googlelogo.jpg" width=86px></img></a>
+        <div id="btslink"><a id="backtosearch" class="links" href="index.html">Back to Google Search</a></div>
+        <div id="pagetitle">Advanced Search</div>
+      </div>
+      <form action="https://google.com/search">
+      <div id="topform">
+        <div id="container1" class="container">
+          <div id="instructions1">Find pages with...</div>
+          <div id="spacer1"></div>
+          <div id="instructions2">To do this in the search box</div>
+          <div id="l1c1" class="col1">all of these words:</div>
+          <div id="l1c2" class="col2"><input class="col2sff" type="text" name="as_q"></div>
+          <div id="l1c3" class="col3">Type the important words:
+            <span class="example">tricolor rat terrier</span></div>
+          <div id="l2c1" class="col1">this exact word or phrase:</div>
+          <div id="l2c2" class="col2"><input class="col2sff" type="text" name="as_epq"></div>
+          <div id="l2c3" class="col3">Put exact words in quotes:
+            <span class="example">"rat terrier"</span></div>
+          <div id="l3c1" class="col1">any of these words:</div>
+          <div id="l3c2" class="col2"><input class="col2sff" type="text" name="as_oq"></div>
+          <div id="l3c3" class="col3">Type OR between any of the words you want:
+            <span class="example">miniture OR standard</span></div>
+          <div id="l4c1" class="col1">none of these words</div>
+          <div id="l4c2" class="col2"><input class="col2sff" type="text" name="as_eq"></div>
+          <div id="l4c3" class="col3">Put a minus sign before words you don't want:
+            <br/><span class="example">-rodent, -"Jack Russell"</span></div>
+          <div id="l5c1" class="col1">numbers ranging from:</div>
+          <div id="l5c2" class="col2">
+            <input class="col2dff" type="text" name="as_nol">
+            <span id="to">&nbsp to &nbsp</span>
+            <input class="col2dff" type="text" name="as_nhi"></div>
+          <div id="l5c3" class="col3">Put 2 periods between numbers then add a unit of measure:
+            <br/><span class="example">10..35 lb, $350..$500, 2010..2011</span></div>
+        </div>
+      </div>
+      <div id="bottomform">
+        <div id="container2" class="container">
+          <div id="instructions1b">Then narrow your results by...</div>
+          <div id="spacer2"></div>
+          <div id="instructions2b"></div>
+          <div id="l6c1" class="col1">language:</div>
+          <div id="l6c2" class="col2">
+            <select id="language" class="col2ddf" name="lr">
+              <option value="">any language</option>
+              <option value="lang_af">Afrikaans</option>
+              <option value="lang_af_ar">Arabic</option>
+              <option value="lang_hy">Armenian</option>
+              <option value="lang_be">Belerusian</option>
+              <option value="lang_en">English</option>
+            </select></div>
+          <div id="l6c3" class="col3">Find pages in the language you select.</div>
+          <div id="l7c1" class="col1">region:</div>
+          <div id="l7c2" class="col2">
+            <select id="region" class="col2ddf" name="cr">
+              <option value="">any region</option>
+              <option value="countryAF">Afghanistan</option>
+              <option value="countryAL">Albania</option>
+              <option value="countryAM">Armenia</option>
+              <option value="countryUS">United States</option>
+            </select></div>
+            <div id="l7c3" class="col3">Find pages published in a particular region.</div>
+            <div id="l8c1" class="col1">last updated</div>
+            <div id="l8c2" class="col2">
+              <select id="update" class="col2ddf" name="as_qdr">
+                <option value="all">anytime</option>
+                <option value"d">past 24 hours</option>
+                <option value="w">past week</option>
+                <option value="m">past month</option>
+                <option value="y">past year</option>
+              </select></div>
+            <div id="l8c3" class="col3">Find pages updated within the time you sepecify</div>
+            <div id="l9c1" class="col1">site or domain:</div>
+            <div id="l9c2" class="col2"><input class="col2sff" name="as_sitesearch"></div>
+            <div id="l9c3" class="col3">Search one site (like wikipedia.org) or limit your resilts to a domain like .edu, .org, or .gov</div>
+            <div id="l10c1" class="col1">terms appearing:</div>
+            <div id="l10c2" class="col2">
+              <select id="terms" class="col2ddf" name="as_occt">
+                <option value="any">anywhere in the page</option>
+                <option value="title">in the title of the page</option>
+                <option value="body">in the text of the page</option>
+                <option value="url">in the URL of the page</option>
+                <option value="links">in the links to the page</option>
+              </select></div>
+            <div id="l10c3" class="col3">Search for terms in the whole page, page title, or web address, or links to the page you're looking for.</div>
+            <div id="l11c1" class="col1">
+              <a class="link" href="https://support.google.com/websearch/answer/510?p=adv_safesearch">Safe Search:</a></div>
+            <div id="l11c2" class="col2">
+              <select id="safesearch" class="col2ddf" name="safe">
+                <option value="images">Show explicit results</option>
+                <option value="active">Hide explicit results</option>
+              </select></div>
+            <div id="l11c3" class="col3">Tell
+              <a class="link" href="https://support.google.com/websearch/answer/510?p=adv_safesearch">Safe Search</a>
+              whether to filter sexually explicit content.</div>
+            <div id="l12c1" class="col1">file type:</div>
+            <div id="l12c2" class="col2">
+              <select id="filetype" class="col2ddf" name="as_filetype">
+                <option value="">any format</option>
+                <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                <option value="ps">Adobe Postscript (.ps)</option>
+                <option value="dwf">Autodesk DWF (.dwf)</option>
+                <option value="kml">Google Earth KML (.kml)</option>
+                <option value="kmz">Google Earth KMZ (.kmz)</option>
+                <option value="xls">Microsoft Excel (.xls)</option>
+                <option value="ppt">Microsoft Powerpoint (.ppt)</option>
+                <option value="doc">Microsoft Word (.doc)</option>
+                <option value="rtf">Rich Text Format (.rtf)</option>
+                <option value="swf">Shockwave Flash (.swf)</option>
+              </select></div>
+            <div id="l12c3" class="col3">Find pages in the format you prefer.</div>
+            <div id="l13c1" class="col1">
+              <a class="link" href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights">usage rights:</a></div>
+            <div id="l13c2" class="col2">
+              <select id="rights" class="col2ddf" name="tbs">
+                <option value="all">not filtered by license</option>
+                <option value="sur%3Af">free to use or share</option>
+                <option value="sur%3Afc">free to use or share, even commercially</option>
+                <option value="sur%3Afm">free to use share or modify</option>
+                <option value="sur%3Afmc">free to use, share or modify, even commercially</option>
+              </select></div>
+            <div id="l13c3" class="col3">Find pages you are free to use yourself.</div>
+            <div id="l14c1spacer"></div>
+            <div id="l14c2submit">
+              <input type="submit" id="submitadv" value="Advancd Search"></div>
+            <div id="l14c3"></div>
+          </form>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="instructions1c">You can also...</div>
+        <div id="endlinks">
+          <a href="https://support.google.com/websearch/answer/2466433" class="endlink">Find pages that are similar to a URL</a><br>
+          <a href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited" class="endlink">Search pages you've visited</a><br>
+          <a href="https://support.google.com/websearch/answer/2466433" class="endlink">Use operators in the search box</a><br>
+          <a href="https://www.google.com/preferences" class="endlink"> Customize your search settings</a><br>
+        </div>
+      </div>
+    </body>
+</html>
